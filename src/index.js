@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//导入网络请求
+import network from './network';
+//把网络请求绑定到react的component上。组件中就可以通过this调用。
+React.Component.prototype.$axios = network
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,40 @@
+.store{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+.store-left{
+  width: 25%;
+  height: 50px;
+}
+img{
+  width: 100%;
+}
+.store-right{
+  width: 74%;
+  list-style: none;
+}
+.store-right li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .left,.middle .left{
+  display: flex;
+  align-items: center;
+}
+.top .left h3{
+  margin-left: 5px;
+  color: black;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.middle{
+  margin: 10px 0px;
+}
+.middle .left:first-child{
+  margin-right: 5px;
+}

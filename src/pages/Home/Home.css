@@ -1,0 +1,13 @@
+.bottom .left{
+  zoom:0.8
+}
+.bottom .right{
+  flex: 1;
+  text-align: right;
+}
+.bottom .right span:last-child(2){
+  margin: 0px 3px;
+}
+.bottom .right span:last-child{
+  color: blue;
+}

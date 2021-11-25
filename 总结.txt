@@ -1,0 +1,32 @@
+一、创建React项目方式
+    第一种：npx create-react-app 项目名   项目名符合变量的命名（不能有大写）
+    第二种：npm i -g create-react-app       ----->   create-react-app 项目名
+
+二、运行项目
+    cd 项目
+    npm start
+
+三、目录：
+  package.json: 对整个应用的描述，包含应用名，版本号，一些依赖等
+  public
+    favicon.ico 项目的图标
+    index.html  项目的入口文件
+    manifest.json 和web app相关的配置
+    robots.txt  指定搜索引擎可以或者不可以获取的内容
+  src
+    App.css       根组件App的样式
+    App.js        App组件的代码文件
+    App.test.js   App组件的测试文件
+    index.css     全局样式文件
+    index.js      整个项目的入口文件
+    logo.svg      项目启动，所看到的react图标
+    reportWebVitals.js   
+    setupTests.js   测试初始化文件
+
+四、rcc  快捷创建组件
+    rconst  快速生成constructor字段
+
+五、网络请求：
+  1、安装；npm install -S axios
+  2、在network.js文件夹中封装axios
+  3、在index.js中把封装好的网络请求绑定到->（React.Component.prototype.$axios = network）
