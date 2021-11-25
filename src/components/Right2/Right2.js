@@ -18,11 +18,11 @@ export default class Right2 extends Component {
           <img src={img} />
         </div>
         <div className="right2_wrap_right">
-          <div className="t1">阿斯顿</div>
-          <div className="t2">的撒旦</div>
-          <div className="t3">月售234份 好评率30%</div>
+          <div className="t1">{this.props.food.name}</div>
+          <div className="t2">{this.props.food.description}</div>
+          <div className="t3">{this.props.food.tips}</div>
           <div className="t4">
-            <div>大伟群岛</div>
+            {this.props.food.activity ? <div>{this.props.food.activity.image_text}</div> : null}
           </div>
           <div className="tt">
             <div className="t5">￥20</div>

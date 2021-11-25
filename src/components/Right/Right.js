@@ -23,9 +23,9 @@ export default class Right extends Component {
     return (
       <div className="right_wrap">
         <Right1 item={this.props.item} />
-        {/* {
-          <Right2 />
-        } */}
+        {
+          this.props.item.foods.map((food, index) => <Right2 food={food} key={index} />)
+        }
       </div>
     )
   }

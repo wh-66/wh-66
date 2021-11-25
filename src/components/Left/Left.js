@@ -4,7 +4,6 @@ import './Left.css'
 export default class Left extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
 
     }

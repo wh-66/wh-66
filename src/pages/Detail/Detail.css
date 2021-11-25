@@ -11,4 +11,5 @@
   width: 75%;
   height: 615px;
   overflow: scroll;
+  overflow-x: hidden;
 }
