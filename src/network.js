@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+//设置默认请求地址
+axios.defaults.baseURL = 'https://elm.cangdu.org';
+
+//封装请求
 function http(params) {
   return axios({ ...params }).then(res => res.data).catch(err => err);
 }

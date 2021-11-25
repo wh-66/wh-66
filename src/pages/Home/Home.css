@@ -11,3 +11,24 @@
 .bottom .right span:last-child{
   color: blue;
 }
+/* 首页样式 */
+.swiper{
+  margin-bottom: 10px;
+}
+.swiper-pagination{
+  width: 100%;
+
+}
+.kinds{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pic_text{
+  width: 25%;
+  zoom: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pic_text img{
+  width: 50%;
+}
