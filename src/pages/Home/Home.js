@@ -52,27 +52,25 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
-        <div className="home">
-          <div className="swiper">
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                {
-                  this.state.kinds.map((items, index) => {
-                    return (<div className="swiper-slide" key={index}>
-                      <div className="kinds">
-                        {items.map((item, i) => <LowerBox text={item.title} url={'https://fuss10.elemecdn.com/' + item.image_url} key={i} />)}
-                      </div>
-                    </div>);
-                  })
-                }
-              </div>
-              <div className="swiper-pagination"></div>
+      <div className="home">
+        <div className="swiper">
+          <div className="swiper-container">
+            <div className="swiper-wrapper">
+              {
+                this.state.kinds.map((items, index) => {
+                  return (<div className="swiper-slide" key={index}>
+                    <div className="kinds">
+                      {items.map((item, i) => <LowerBox text={item.title} url={'https://fuss10.elemecdn.com/' + item.image_url} key={i} />)}
+                    </div>
+                  </div>);
+                })
+              }
             </div>
+            <div className="swiper-pagination"></div>
           </div>
         </div>
         <div className="stores">
-            {this.state.store.map((store,index)=><Store item={store} key={index} />)}
+          {this.state.store.map((store, index) => <Store item={store} key={index} />)}
         </div>
       </div>
     )

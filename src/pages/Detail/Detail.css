@@ -1,0 +1,14 @@
+.detail_content{
+  display: flex;
+  width: 100%;
+}
+.detail_content_d1{
+  width: 25%;
+  height: 615px;
+  overflow: scroll;
+}
+.detail_content_d2{
+  width: 75%;
+  height: 615px;
+  overflow: scroll;
+}
